@@ -1,0 +1,13 @@
+.basicSquareElem {
+}
+
+.marker {
+    border-left-color: rgba(5, 255, 0, 255);
+    border-right-color: rgba(5, 255, 0, 255);
+    border-top-color: rgba(5, 255, 0, 255);
+    border-bottom-color: rgba(5, 255, 0, 255);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
