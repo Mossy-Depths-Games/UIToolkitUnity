@@ -1,0 +1,57 @@
+.panel_badge {
+    margin-bottom: 5px;
+}
+
+.panel {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(63, 72, 75, 0.5);
+}
+
+.text_classic {
+    -unity-font: url('project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&guid=23ebdc920b72eb94ba33fdc73a95032e&type=3#Cinzel-VariableFont_wght');
+    -unity-font-definition: url('project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&guid=c6210e97020309b438c00f4f8d57c61b&type=2#Cinzel-VariableFont_wght SDF');
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.panel_info {
+    flex-basis: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.text_classic {
+    -unity-font: url('project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&guid=23ebdc920b72eb94ba33fdc73a95032e&type=3#Cinzel-VariableFont_wght');
+    -unity-font-definition: url('project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&guid=c6210e97020309b438c00f4f8d57c61b&type=2#Cinzel-VariableFont_wght SDF');
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+}
+
+.rts_button {
+    background-color: rgba(68, 87, 102, 255);
+    border-left-color: rgba(206, 172, 110, 255);
+    border-right-color: rgba(206, 172, 110, 255);
+    border-top-color: rgba(206, 172, 110, 255);
+    border-bottom-color: rgba(206, 172, 110, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

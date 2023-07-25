@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Card" style="width: 210px; height: 300px;">
+        <ui:VisualElement name="CardFrame" style="background-color: rgb(213, 31, 32); width: 200px; height: 300px; justify-content: space-around; align-items: center; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; -unity-background-scale-mode: scale-to-fit; flex-grow: 0; padding-right: 0;">
+            <ui:VisualElement name="Avatar" style="background-image: url(&apos;project://database/Assets/04_Initial/berserk_badge.png?fileID=2800000&amp;guid=7cdee4275ee631940bad20fa695de54c&amp;type=3#berserk_badge&apos;); width: 40%; height: auto; flex-grow: 1; -unity-background-scale-mode: scale-to-fit; align-items: flex-start; padding-bottom: 0; margin-bottom: 40%;" />
+            <ui:Label tabindex="-1" text="Name" display-tooltip-when-elided="true" name="NameLabel" style="-unity-text-align: upper-center; margin-bottom: 60px; font-size: 35px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

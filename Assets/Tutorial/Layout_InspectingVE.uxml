@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-color: rgb(15, 38, 70); flex-direction: row;">
+        <ui:VisualElement name="Left" style="flex-grow: 1; background-color: rgb(255, 241, 178); width: 35%;">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CardContainer" style="flex-grow: 1; background-color: rgb(18, 28, 44); width: 65%; align-items: center; justify-content: center; flex-direction: row;" />
+    </ui:VisualElement>
+</ui:UXML>
