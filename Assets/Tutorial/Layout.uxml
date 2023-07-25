@@ -1,5 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/StyleSheets/UIStyleInitial.uss?fileID=7433441132597879392&amp;guid=7c4b634a352203a449b0012595783734&amp;type=3#UIStyleInitial" />
+    <ui:Template name="Template_MiddleBadgeUnlocked" src="project://database/Assets/Template_MiddleBadgeUnlocked.uxml?fileID=9197481963319205126&amp;guid=0c8eccd3b5b166e4bab7ad0a3a3391f3&amp;type=3#Template_MiddleBadgeUnlocked" />
+    <ui:Template name="Template_MiddleBadgeLocked" src="project://database/Assets/Template_MiddleBadgeLocked.uxml?fileID=9197481963319205126&amp;guid=a078f344e9f567446810322dbd351ef1&amp;type=3#Template_MiddleBadgeLocked" />
+    <Style src="project://database/Assets/Resources/StyleSheets/UIStyleInitial.uss?fileID=7433441132597879392&amp;guid=7c4b634a352203a449b0012595783734&amp;type=3#UIStyleInitial" />
     <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/04_Initial/img/background_blur.jpg?fileID=2800000&amp;guid=942e049bee7a425448e9842f54a13d2b&amp;type=3#background_blur&apos;);">
         <ui:VisualElement name="TopContainer" style="flex-direction: row; flex-basis: 80%;">
             <ui:VisualElement name="TopLeft" style="flex-basis: 20%; justify-content: flex-end; right: 0; margin-right: 10%;">
@@ -16,12 +18,24 @@
             <ui:VisualElement name="TopMiddle" style="flex-basis: 60%; flex-direction: row; align-items: flex-end;">
                 <ui:VisualElement name="PanelFraction" class="panel" style="width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
                 <ui:VisualElement name="PanelBadges" style="width: 10%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;">
-                    <ui:VisualElement class="panel_badge" style="background-color: rgb(11, 255, 0); flex-basis: 100%; border-top-right-radius: 20px;" />
-                    <ui:VisualElement class="panel_badge" style="background-color: rgb(0, 35, 255); flex-basis: 100%;" />
-                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 0, 37); flex-basis: 100%;" />
-                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 0, 212); flex-basis: 100%;" />
-                    <ui:VisualElement class="panel_badge" style="background-color: rgb(0, 0, 0); flex-basis: 100%;" />
-                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 163, 0); flex-basis: 100%; margin-bottom: 0; border-bottom-right-radius: 20px;" />
+                    <ui:VisualElement class="panel_badge" style="background-color: rgb(11, 255, 0); flex-basis: 100%; border-top-right-radius: 20px; flex-grow: 1;">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_badge" style="background-color: rgb(0, 35, 255); flex-basis: 100%;">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 0, 37); flex-basis: 100%;">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 0, 212); flex-basis: 100%;">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 255, 255); flex-basis: 100%;">
+                        <ui:Instance template="Template_MiddleBadgeLocked" name="Template_MiddleBadgeLocked" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_badge" style="background-color: rgb(255, 163, 0); flex-basis: 100%; margin-bottom: 0; border-bottom-right-radius: 20px;">
+                        <ui:Instance template="Template_MiddleBadgeLocked" name="Template_MiddleBadgeLocked" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="PanelList" class="panel" style="width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;" />
                 <ui:VisualElement name="PanelInfo" style="width: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
