@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="justify-content: center; flex-grow: 1; align-items: center; background-color: rgb(18, 28, 44);">
+        <ui:Slider picking-mode="Ignore" label="Slider" value="42" high-value="100" name="MySlider" style="width: 800px; padding-bottom: 50px; color: rgb(255, 255, 255);" />
+        <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" text="filler text" name="MyTextField" style="padding-bottom: 50px; width: 800px; color: rgb(12, 12, 12);" />
+        <ui:VisualElement name="MyElem" style="width: 200px; height: 100px; background-color: rgb(255, 0, 0);" />
+    </ui:VisualElement>
+</ui:UXML>
