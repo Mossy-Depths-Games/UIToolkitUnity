@@ -1,9 +1,17 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Card" src="project://database/Assets/Resources/Card.uxml?fileID=9197481963319205126&amp;guid=1dd308f6ea6d24f47820d9611e8d6580&amp;type=3#Card" />
+    <Style src="project://database/Assets/Resources/StyleSheets/CardStyleSheet.uss?fileID=7433441132597879392&amp;guid=9d2407512c96b1c4a9fe542917a974d0&amp;type=3#CardStyleSheet" />
     <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-color: rgb(15, 38, 70); flex-direction: row;">
-        <ui:VisualElement name="Left" style="flex-grow: 1; background-color: rgb(255, 241, 178); width: 35%;">
-            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+        <ui:VisualElement name="Left" style="flex-grow: 1; background-color: rgb(255, 241, 178); width: 35%; align-items: center; justify-content: center;">
+            <ui:TextField picking-mode="Ignore" label="Name" value="Name" text="Name" name="NameField" style="width: 500px;" />
+            <ui:TextField picking-mode="Ignore" label="Description" value="Description" text="Description" name="DescriptionField" style="width: 500px;" />
         </ui:VisualElement>
-        <ui:VisualElement name="CardContainer" style="flex-grow: 1; background-color: rgb(18, 28, 44); width: 65%; align-items: center; justify-content: center; flex-direction: row;" />
+        <ui:VisualElement name="Right" style="width: 65%; justify-content: center; align-items: center;">
+            <ui:VisualElement name="CardContainer" style="flex-grow: 0; background-color: rgb(18, 28, 44); width: auto; align-items: center; justify-content: center; flex-direction: row;">
+                <ui:Instance template="Card" name="Card1" />
+                <ui:Instance template="Card" name="Card2" />
+                <ui:Instance template="Card" name="Card3" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
