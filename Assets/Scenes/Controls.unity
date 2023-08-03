@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: ae31d75c340b9b4439c5d801f96b5251, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: ee573abea39fcee44aec6d832c71c054, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 0135456e43b7d354fa85aeca0250852f, type: 3}
   m_SortingOrder: 0
 --- !u!4 &286517351
 Transform:
@@ -181,9 +181,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 286517349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5597970011738104d9bbadc4c70e934d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d6a2fbd8d9afa04d845017d530f4d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  factions:
+  - {fileID: 11400000, guid: bc20d37712007b0418e3499029a02b80, type: 2}
+  - {fileID: 11400000, guid: 5f52bd5b963e6794cb855ccec45df77b, type: 2}
+  - {fileID: 11400000, guid: 779075867790d42488842349fa23ef71, type: 2}
+  listItems:
+  - {fileID: 11400000, guid: b28b0a6c3e456b54f9ae02639073dc00, type: 2}
+  - {fileID: 11400000, guid: 604578e69eba2c941822dd8565b90f58, type: 2}
+  - {fileID: 11400000, guid: 3f98adb155378524c89599a6304918c5, type: 2}
+  - {fileID: 11400000, guid: 54077e6990402e74596c9d4a46dc51c4, type: 2}
+  - {fileID: 11400000, guid: 28995c45c9a715540a838eaaeb92b259, type: 2}
+  - {fileID: 11400000, guid: 00875539a18540c47871ca189089791c, type: 2}
+  - {fileID: 11400000, guid: fcaa0d38ec7d14f479ef52c6a4ce166d, type: 2}
+  - {fileID: 11400000, guid: 03820e91a91867049805aa90115cc2e2, type: 2}
 --- !u!1 &1237177392
 GameObject:
   m_ObjectHideFlags: 0

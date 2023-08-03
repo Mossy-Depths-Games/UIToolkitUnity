@@ -4,11 +4,21 @@ using UnityEngine.UIElements;
 
 public class ProjectQuery : MonoBehaviour
 {
+    [SerializeField]
+    private List<Faction> factions = new List<Faction>();
+    [SerializeField]
+    private List<ListItem> listItems = new List<ListItem>();
+
     VisualElement root;
+    DropdownController dropdownController;
+    ListController listController;
+
     private void OnEnable()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
         InitializeBadges();
+        dropdownController = new DropdownController(root, factions);
+        listController = new ListController(root, listItems);
     }
 
     private void InitializeBadges()

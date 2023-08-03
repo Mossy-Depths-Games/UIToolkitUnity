@@ -5,18 +5,23 @@
     <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/04_Initial/img/background_blur.jpg?fileID=2800000&amp;guid=942e049bee7a425448e9842f54a13d2b&amp;type=3#background_blur&apos;);">
         <ui:VisualElement name="TopContainer" style="flex-direction: row; flex-basis: 80%;">
             <ui:VisualElement name="TopLeft" style="flex-basis: 20%; justify-content: flex-end; right: 0; margin-right: 10%;">
-                <ui:VisualElement name="PanelMiniFraction" class="panel" style="margin-left: 20px; margin-right: 0; margin-top: 20px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; border-top-left-radius: 70px; border-bottom-left-radius: 70px; padding-left: 10px;">
-                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/04_Initial/berserk_badge.png?fileID=2800000&amp;guid=7cdee4275ee631940bad20fa695de54c&amp;type=3#berserk_badge&apos;); width: 120px; height: 120px; -unity-background-scale-mode: scale-to-fit; padding-left: 10px; padding-right: 0;" />
+                <ui:VisualElement name="PanelMiniFaction" class="panel" style="margin-left: 20px; margin-right: 0; margin-top: 20px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; border-top-left-radius: 70px; border-bottom-left-radius: 70px; padding-left: 10px;">
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Resources/berserk_badge.png?fileID=2800000&amp;guid=7cdee4275ee631940bad20fa695de54c&amp;type=3#berserk_badge&apos;); width: 120px; height: 120px; -unity-background-scale-mode: scale-to-fit; padding-left: 10px; padding-right: 0;" />
                     <ui:VisualElement style="padding-left: 10px; justify-content: center;">
                         <ui:Label tabindex="-1" text="Japanese Manga" display-tooltip-when-elided="true" class="text_classic" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); white-space: nowrap;" />
                         <ui:Label tabindex="-1" text="Medieval Europe" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
                         <ui:Label tabindex="-1" text="Dark Fantasy" display-tooltip-when-elided="true" style="-unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); -unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;);" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-basis: 80%;" />
+                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-basis: 80%;">
+                    <ui:VisualElement name="Character" style="flex-grow: 1;" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="TopMiddle" style="flex-basis: 60%; flex-direction: row; align-items: flex-end;">
-                <ui:VisualElement name="PanelFraction" class="panel" style="width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                <ui:VisualElement name="PanelFaction" class="panel" style="width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="FactionName" />
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="FactionMotto" />
+                </ui:VisualElement>
                 <ui:VisualElement name="PanelBadges" style="width: 10%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;">
                     <ui:VisualElement class="panel_badge" style="background-color: rgb(11, 255, 0); flex-basis: 100%; border-top-right-radius: 20px; flex-grow: 1;">
                         <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" />
@@ -37,7 +42,13 @@
                         <ui:Instance template="Template_MiddleBadgeLocked" name="Template_MiddleBadgeLocked" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="PanelList" class="panel" style="width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;" />
+                <ui:VisualElement name="PanelList" class="panel" style="width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;">
+                    <ui:VisualElement name="PanelListTop" style="height: 25%;" />
+                    <ui:VisualElement name="ListContainer" style="height: 50%;">
+                        <ui:ListView focusable="true" name="List" style="height: auto;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="DetailContainer" style="height: 25%;" />
+                </ui:VisualElement>
                 <ui:VisualElement name="PanelInfo" style="width: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
                     <ui:VisualElement class="panel panel_info">
                         <ui:Label tabindex="-1" text="Guts Goal" display-tooltip-when-elided="true" class="text_classic" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
@@ -56,6 +67,8 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="BottomContainer" style="flex-direction: row; flex-basis: 20%;" />
+        <ui:VisualElement name="BottomContainer" style="flex-direction: row; flex-basis: 20%;">
+            <ui:VisualElement name="DropdownContainer" style="width: 20%;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
