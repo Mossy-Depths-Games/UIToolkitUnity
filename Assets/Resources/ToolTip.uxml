@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/StyleSheets/StyleSheet_ToolTip.uss?fileID=7433441132597879392&amp;guid=88d8cff6b4dee8645a9d2e8c0ea6e0f1&amp;type=3#StyleSheet_ToolTip" />
+    <ToolTip />
+</ui:UXML>

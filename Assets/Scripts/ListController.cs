@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -8,6 +9,7 @@ public class ListController
     ListView list;
 
     List<ListItem> listItems;
+    ListItem chosenItem;
 
     public ListController(VisualElement root, List<ListItem> listItems)
     {
@@ -47,5 +49,31 @@ public class ListController
 
         list.itemsSource = listItems;
         list.fixedItemHeight = 35;
+
+        list.onSelectionChange += (elem) => OnSelectionChanged(elem);
+    }
+    private void OnSelectionChanged(IEnumerable<object> elem)
+    {
+        chosenItem = elem.First() as ListItem;
+        UpdateDetails();
+    }
+    private void UpdateDetails()
+    {
+        VisualElement detailImg = root.Q<VisualElement>("DetailImg");
+        Sprite iconImg = Resources.Load<Sprite>(chosenItem.itemIconPath);
+        detailImg.style.backgroundImage = new StyleBackground(iconImg);
+
+        Label detailLabel = root.Q<Label>("DetailName");
+        detailLabel.text = chosenItem.itemName;
+
+        Label detailScore = root.Q<Label>("DetailScore");
+        detailScore.text = "Score " + chosenItem.score;
+
+        VisualElement detailScoreImg = root.Q<VisualElement>("DetailScoreImg");
+        Sprite scoreSprite = Resources.Load<Sprite>(chosenItem.itemIconPath2);
+        detailScoreImg.style.backgroundImage = new StyleBackground(scoreSprite);
+
+        Label rewardLabel = root.Q<Label>("DetailReward");
+        rewardLabel.text = "Reward: " + chosenItem.reward;
     }
 }

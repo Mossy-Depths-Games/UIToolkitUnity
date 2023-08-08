@@ -4,16 +4,17 @@
     <Style src="project://database/Assets/Resources/StyleSheets/UIStyleInitial.uss?fileID=7433441132597879392&amp;guid=7c4b634a352203a449b0012595783734&amp;type=3#UIStyleInitial" />
     <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/04_Initial/img/background_blur.jpg?fileID=2800000&amp;guid=942e049bee7a425448e9842f54a13d2b&amp;type=3#background_blur&apos;);">
         <ui:VisualElement name="TopContainer" style="flex-direction: row; flex-basis: 80%;">
-            <ui:VisualElement name="TopLeft" style="flex-basis: 20%; justify-content: flex-end; right: 0; margin-right: 10%;">
-                <ui:VisualElement name="PanelMiniFaction" class="panel" style="margin-left: 20px; margin-right: 0; margin-top: 20px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; border-top-left-radius: 70px; border-bottom-left-radius: 70px; padding-left: 10px;">
+            <ui:VisualElement name="TopLeft" style="flex-basis: 22%; justify-content: flex-end; right: 0; margin-right: 5%;">
+                <ui:VisualElement name="PanelMiniFaction" class="panel" style="margin-left: 20px; margin-right: 0; margin-top: 20px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; border-top-left-radius: 70px; border-bottom-left-radius: 70px; padding-left: 10px; width: 100%; align-items: center; justify-content: center;">
                     <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Resources/berserk_badge.png?fileID=2800000&amp;guid=7cdee4275ee631940bad20fa695de54c&amp;type=3#berserk_badge&apos;); width: 120px; height: 120px; -unity-background-scale-mode: scale-to-fit; padding-left: 10px; padding-right: 0;" />
                     <ui:VisualElement style="padding-left: 10px; justify-content: center;">
                         <ui:Label tabindex="-1" text="Japanese Manga" display-tooltip-when-elided="true" class="text_classic" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); white-space: nowrap;" />
+                        <StarControl stars="6" />
                         <ui:Label tabindex="-1" text="Medieval Europe" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
                         <ui:Label tabindex="-1" text="Dark Fantasy" display-tooltip-when-elided="true" style="-unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); -unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;);" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-basis: 80%;">
+                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-basis: 80%; width: 100%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0;">
                     <ui:VisualElement name="Character" style="flex-grow: 1;" />
                 </ui:VisualElement>
             </ui:VisualElement>
@@ -47,19 +48,32 @@
                     <ui:VisualElement name="ListContainer" style="height: 50%;">
                         <ui:ListView focusable="true" name="List" style="height: auto;" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="DetailContainer" style="height: 25%;" />
+                    <ui:VisualElement name="DetailContainer" style="height: 25%; flex-direction: row;">
+                        <ui:VisualElement name="DetailFraction" style="width: 50%; align-items: center; justify-content: center;">
+                            <ui:VisualElement name="DetailImg" style="width: 35px; height: 35px;" />
+                            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="DetailName" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="DetailNumbers" style="width: 50%;">
+                            <ui:VisualElement>
+                                <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="DetailScore" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
+                                <ui:VisualElement name="DetailScoreImg" style="width: 20px; height: 20px;" />
+                            </ui:VisualElement>
+                            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="DetailReward" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="PanelInfo" style="width: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
                     <ui:VisualElement class="panel panel_info">
                         <ui:Label tabindex="-1" text="Guts Goal" display-tooltip-when-elided="true" class="text_classic" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
+                        <StarControl stars="3" />
                         <ui:Label tabindex="-1" text="Kill Grifith" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
                         <ui:Button tabindex="-1" text="Show Details" display-tooltip-when-elided="true" class="rts_button" />
                     </ui:VisualElement>
-                    <ui:VisualElement class="panel panel_info" style="flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; justify-content: space-between;">
-                        <ui:Label tabindex="-1" text="Missions Completed" display-tooltip-when-elided="true" class="text_classic" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); -unity-text-align: upper-center; white-space: normal;" />
-                        <ui:VisualElement>
-                            <ui:Label tabindex="-1" text="Save Caska" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
-                            <ui:Label tabindex="-1" text="Berserker Armor" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
+                    <ui:VisualElement class="panel panel_info" style="flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; justify-content: space-between; align-items: center; padding-left: 0; padding-right: 0; padding-bottom: 0; padding-top: 0;">
+                        <ui:Label tabindex="-1" text="Missions Completed" display-tooltip-when-elided="true" class="text_classic" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); -unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;" />
+                        <ui:VisualElement style="margin-bottom: 0; padding-bottom: 0;">
+                            <ui:Label tabindex="-1" text="Save Caska" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); margin-top: 0; margin-bottom: 0; padding-bottom: 0;" />
+                            <ui:Label tabindex="-1" text="Berserker Armor" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght.ttf?fileID=12800000&amp;guid=23ebdc920b72eb94ba33fdc73a95032e&amp;type=3#Cinzel-VariableFont_wght&apos;); -unity-font-definition: url(&apos;project://database/Assets/04_Initial/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;" />
                         </ui:VisualElement>
                         <ui:Button tabindex="-1" text="Show Details" display-tooltip-when-elided="true" class="rts_button" />
                     </ui:VisualElement>
@@ -68,7 +82,34 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="BottomContainer" style="flex-direction: row; flex-basis: 20%;">
-            <ui:VisualElement name="DropdownContainer" style="width: 20%;" />
+            <ui:VisualElement name="BottomLeft" style="margin-right: 5%; width: 22%;">
+                <ui:VisualElement name="DropdownContainer" style="width: 100%; height: 100%; margin-left: 20px; margin-right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BottomRight" style="width: 78%; flex-direction: row;">
+                <ui:VisualElement style="width: 70%; display: flex; margin-left: 20px; height: 100%;" />
+                <ui:VisualElement style="width: 25%; flex-direction: row; display: flex; scale: 1.25 1.25; translate: 0 -39px;">
+                    <ui:VisualElement style="width: 50%; flex-direction: row; height: 100%; display: flex; justify-content: flex-end; align-items: flex-end; padding-bottom: 20px;">
+                        <ui:VisualElement style="width: 50%; height: 50%; flex-direction: row; justify-content: center; align-items: stretch;">
+                            <ui:VisualElement style="width: 50%; height: 100%; display: flex; scale: 1 1; justify-content: center; align-items: flex-end;">
+                                <ui:VisualElement name="ToolTip_3" tooltip="Tool Tip 3" style="width: 50%; height: 50%; justify-content: center; align-items: center; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-left-radius: 5px;">
+                                    <ui:VisualElement style="width: 100%; height: 50%; background-image: resource(&apos;icon3&apos;); -unity-background-scale-mode: scale-to-fit; scale: 0.75 0.75;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="ToolTip_4" tooltip="Tool Tip 4" style="width: 50%; height: 50%; justify-content: center; align-items: center; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-bottom-left-radius: 5px;">
+                                    <ui:VisualElement style="width: 100%; height: 50%; background-image: resource(&apos;icon1&apos;); -unity-background-scale-mode: scale-to-fit; scale: 0.75 0.75;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ToolTip_2" tooltip="Tool Tip 2" style="width: 50%; background-image: resource(&apos;icon2&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); align-items: flex-start; border-top-right-radius: 5px; border-bottom-right-radius: 5px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="width: 50%; height: 100%; justify-content: center; align-items: center; position: relative; translate: 20px 40px;">
+                        <ui:VisualElement style="background-image: resource(&apos;StarForCorner&apos;); -unity-background-scale-mode: scale-to-fit; width: 250px; height: 250px; transform-origin: center; -unity-background-image-tint-color: rgba(255, 255, 255, 0.18); position: absolute; justify-content: center; align-items: center;">
+                            <ui:VisualElement name="ToolTip_1" tooltip="Tool Tip 1" style="width: 50px; height: 50px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); align-items: center; justify-content: center;">
+                                <ui:VisualElement style="width: 30px; height: 30px; background-image: resource(&apos;icon4&apos;); border-right-color: rgb(0, 255, 0); border-top-color: rgb(0, 255, 0); border-bottom-color: rgb(0, 255, 0);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

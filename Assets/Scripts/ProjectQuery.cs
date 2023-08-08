@@ -12,6 +12,7 @@ public class ProjectQuery : MonoBehaviour
     VisualElement root;
     DropdownController dropdownController;
     ListController listController;
+    ToolTipController toolTipController;
 
     private void OnEnable()
     {
@@ -19,6 +20,7 @@ public class ProjectQuery : MonoBehaviour
         InitializeBadges();
         dropdownController = new DropdownController(root, factions);
         listController = new ListController(root, listItems);
+        toolTipController = new ToolTipController(root);
     }
 
     private void InitializeBadges()
